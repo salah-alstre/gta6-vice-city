@@ -1,0 +1,299 @@
+{
+  "meta": {
+    "title": "Vice City Awaits — A Grand Theft Auto VI Fan Experience",
+    "description": "An unofficial, cinematic fan experience for Grand Theft Auto VI — scroll-driven storytelling, an interactive 3D piece, verified release information, and the world of Leonida.",
+    "disclaimer": "Unofficial fan project. Not affiliated with Rockstar Games or Take-Two Interactive."
+  },
+  "nav": {
+    "brand": "VI",
+    "brandSub": "UNOFFICIAL",
+    "home": "Home",
+    "world": "Vice City",
+    "trailers": "Trailers",
+    "characters": "Characters",
+    "gallery": "Gallery",
+    "release": "Release",
+    "hardware": "Hardware",
+    "timeline": "Timeline",
+    "menu": "Menu",
+    "close": "Close"
+  },
+  "preloader": {
+    "mark": "VI",
+    "loading": "Loading Vice City",
+    "enter": "Enter"
+  },
+  "video": {
+    "line1": "Welcome to",
+    "line2": "Vice City",
+    "line3": "The next chapter",
+    "line4": "Grand Theft Auto VI",
+    "scrollHint": "Scroll to play"
+  },
+  "transition": {
+    "eyebrow": "Rockstar Games presents",
+    "title1": "Welcome back to",
+    "title2": "Vice City"
+  },
+  "intro": {
+    "kicker": "Grand Theft Auto VI",
+    "heading": "Leonida is calling",
+    "bigWord": "VI",
+    "paragraph1": "Rockstar North returns to the neon sprawl of Vice City, this time as part of the sun-scorched state of Leonida — the studio's biggest and most ambitious world yet.",
+    "paragraph2": "Two criminals, one impossible score. Lucia Caminos and Jason Duval are pulled into a conspiracy that stretches from the beaches of Vice City to the swamps beyond it.",
+    "meta1Label": "Developer",
+    "meta1Value": "Rockstar North",
+    "meta2Label": "Publisher",
+    "meta2Value": "Rockstar Games",
+    "meta3Label": "Setting",
+    "meta3Value": "Leonida — Vice City & beyond",
+    "meta4Label": "Release",
+    "meta4Value": "November 19, 2026"
+  },
+  "model": {
+    "line1": "Welcome back",
+    "line2": "Vice",
+    "line3": "City",
+    "line4": "The next chapter",
+    "credit": "3D piece adapted from official key art · model by Fabio Roloff, Sketchfab · CC BY 4.0",
+    "dragHint": "Move to explore"
+  },
+  "countdown": {
+    "kicker": "Mark the date",
+    "until": "Until",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds",
+    "releaseDate": "November 19, 2026",
+    "platforms": "PlayStation 5 · Xbox Series X|S",
+    "live": "Grand Theft Auto VI is out now.",
+    "sourceNote": "Date per Rockstar Games' official announcement."
+  },
+  "world": {
+    "kicker": "The world",
+    "heading": "Leonida",
+    "sub": "Vice City & the state around it",
+    "intro": "A fictional take on Florida — sun, swamp, and sprawl. Vice City is the beating heart: a Miami-inspired coastline of neon, nightlife and heat, wrapped in the wider state of Leonida.",
+    "scrollHint": "Scroll to explore",
+    "loc1Title": "Vice City",
+    "loc1Body": "Beaches, high-rises and nightlife soaked in pink and violet light — the series' most iconic city, rebuilt from the ground up.",
+    "loc2Title": "Leonida Keys",
+    "loc2Body": "A chain of islands strung along open water south of the city — marinas, causeways and the kind of heat that doesn't break at night.",
+    "loc3Title": "Port Gellhorn",
+    "loc3Body": "A working harbor town of docks, freight yards and salt air — Leonida's rougher edge, far from the postcard skyline.",
+    "loc4Title": "Ambrosia",
+    "loc4Body": "Old money and orange groves — a quieter, wealthier corner of the state, all manicured lawns and long driveways.",
+    "loc5Title": "Grassrivers",
+    "loc5Body": "Wetland and backroads on the way out of the city — airboats, gators, and a slower, wilder pace of life.",
+    "loc6Title": "Mount Kalaga National Park",
+    "loc6Body": "Highlands and forest above the coastline — the wildest stretch of Leonida, largely untouched by the city below."
+  },
+  "characters": {
+    "kicker": "The protagonists",
+    "heading": "Lucia & Jason",
+    "lucia": {
+      "name": "Lucia Caminos",
+      "role": "Protagonist",
+      "bio": "One of the series' first playable women leads. Sharp, guarded, and done being underestimated — Lucia is in it for a way out."
+    },
+    "jason": {
+      "name": "Jason Duval",
+      "role": "Protagonist",
+      "bio": "Lucia's partner in a job that goes wrong fast. Loyal, volatile, and in over his head the moment the score turns into a conspiracy."
+    },
+    "note": "Only officially confirmed details are shown here."
+  },
+  "trailers": {
+    "kicker": "Trailer cinema",
+    "heading": "Watch the reveals",
+    "select": "Select",
+    "watchOn": "Watch on YouTube",
+    "reveal": {
+      "title": "Trailer 1",
+      "description": "The reveal. Vice City returns, and Grand Theft Auto VI is officially confirmed."
+    },
+    "trailer2": {
+      "title": "Trailer 2",
+      "description": "A longer look at Leonida, captured entirely in-engine on PlayStation 5."
+    },
+    "extendedLook": {
+      "title": "An Extended Look",
+      "description": "26 minutes of gameplay and story, premiered on Netflix and Rockstar's own channels."
+    }
+  },
+  "gallery": {
+    "kicker": "Art & imagery",
+    "heading": "Vice City, in stills",
+    "sourceNote": "Official key art via Rockstar Games."
+  },
+  "info": {
+    "kicker": "The facts",
+    "heading": "Game information",
+    "developer": "Developer",
+    "developerValue": "Rockstar North",
+    "publisher": "Publisher",
+    "publisherValue": "Rockstar Games / Take-Two Interactive",
+    "genre": "Genre",
+    "genreValue": "Action-adventure, open world",
+    "setting": "Setting",
+    "settingValue": "Leonida — Vice City and beyond",
+    "protagonists": "Protagonists",
+    "protagonistsValue": "Lucia Caminos, Jason Duval",
+    "release": "Release date",
+    "releaseValue": "November 19, 2026",
+    "platforms": "Platforms",
+    "platformsValue": "PlayStation 5, Xbox Series X|S",
+    "pc": "PC version",
+    "pcValue": "Not officially announced",
+    "modes": "Game modes",
+    "modesValue": "Not officially announced beyond the single-player story"
+  },
+  "platforms": {
+    "kicker": "Where to play",
+    "heading": "Confirmed platforms",
+    "ps5": "PlayStation 5",
+    "xsx": "Xbox Series X|S",
+    "pc": "PC",
+    "pcStatus": "Not officially announced",
+    "confirmed": "Confirmed",
+    "note": "Rockstar has confirmed PlayStation 5 and Xbox Series X|S. No PC release has been announced."
+  },
+  "hardware": {
+    "kicker": "Best way to play",
+    "heading": "Choose your hardware",
+    "bestFor": "Best for",
+    "tier": "Tier",
+    "storage": "Storage",
+    "price": "Price tier",
+    "note": "Performance targets (resolution, frame rate) have not been officially confirmed by Rockstar Games for any platform.",
+    "ps5": {
+      "name": "PlayStation 5",
+      "tier": "Standard",
+      "bestFor": "The confirmed baseline experience",
+      "storage": "825 GB SSD (console spec)",
+      "price": "Standard"
+    },
+    "ps5pro": {
+      "name": "PlayStation 5 Pro",
+      "tier": "Enhanced hardware",
+      "bestFor": "Players who want Sony's most powerful console",
+      "storage": "2 TB SSD (console spec)",
+      "price": "Premium"
+    },
+    "seriesx": {
+      "name": "Xbox Series X",
+      "tier": "Standard",
+      "bestFor": "Highest-spec Xbox hardware available",
+      "storage": "1 TB SSD (console spec)",
+      "price": "Standard"
+    },
+    "seriess": {
+      "name": "Xbox Series S",
+      "tier": "Entry",
+      "bestFor": "A confirmed platform at a lower entry cost",
+      "storage": "512 GB SSD (console spec)",
+      "price": "Value"
+    }
+  },
+  "requirements": {
+    "kicker": "System requirements",
+    "heading": "PC requirements",
+    "notAnnounced": "Not yet announced",
+    "explanation": "Rockstar Games has not announced a PC version of Grand Theft Auto VI. Official system requirements do not exist yet.",
+    "estimateToggle": "Show unofficial community estimates",
+    "estimateLabel": "UNOFFICIAL ESTIMATE — not from Rockstar Games",
+    "estimateNote": "Speculative, based on comparable current-generation open-world titles. Treat as a rough guess, not a spec sheet.",
+    "minimum": "Minimum (estimate)",
+    "recommended": "Recommended (estimate)",
+    "high": "High (estimate)",
+    "fourK": "4K (estimate)",
+    "os": "OS",
+    "cpu": "CPU",
+    "gpu": "GPU",
+    "ram": "RAM",
+    "storage": "Storage"
+  },
+  "timeline": {
+    "kicker": "The road here",
+    "heading": "Timeline",
+    "announcement": {
+      "title": "Development confirmed",
+      "description": "Take-Two confirms Grand Theft Auto VI is in active development."
+    },
+    "revealTrailer": {
+      "title": "Trailer 1",
+      "description": "The reveal trailer breaks the record for most-viewed game reveal in 24 hours."
+    },
+    "release2025Target": {
+      "title": "Fall 2025 targeted",
+      "description": "Rockstar states it is targeting a Fall 2025 release window."
+    },
+    "firstDelay": {
+      "title": "First delay",
+      "description": "Rockstar moves the release date to May 26, 2026."
+    },
+    "trailer2": {
+      "title": "Trailer 2",
+      "description": "A second trailer shows more of Leonida, captured in-engine on PS5."
+    },
+    "secondDelay": {
+      "title": "Second delay",
+      "description": "Rockstar pushes the release to November 19, 2026 for extra polish."
+    },
+    "extendedLook": {
+      "title": "An Extended Look",
+      "description": "A 26-minute gameplay deep dive airs on Netflix and YouTube."
+    },
+    "launch": {
+      "title": "Launch",
+      "description": "Grand Theft Auto VI releases on PlayStation 5 and Xbox Series X|S."
+    }
+  },
+  "news": {
+    "kicker": "Latest information",
+    "heading": "News & updates",
+    "readMore": "Read the source",
+    "items": {
+      "extendedLook": {
+        "title": "Grand Theft Auto VI: An Extended Look premieres on Netflix",
+        "description": "Rockstar's 26-minute gameplay showcase aired on Netflix before landing on YouTube, giving the first extended look at story and gameplay.",
+        "date": "August 27, 2026",
+        "category": "Trailer"
+      },
+      "secondDelay": {
+        "title": "Release date moves to November 19, 2026",
+        "description": "Rockstar delays the game a second time, citing the need for extra polish ahead of launch.",
+        "date": "November 2025",
+        "category": "Release"
+      },
+      "trailer2": {
+        "title": "Trailer 2 arrives, confirms May 2026 date",
+        "description": "The second trailer, captured entirely in-engine on PlayStation 5, arrives alongside a refreshed Rockstar Games website.",
+        "date": "May 6, 2025",
+        "category": "Trailer"
+      }
+    }
+  },
+  "final": {
+    "line1": "See you in",
+    "line2": "Vice City",
+    "date": "November 19, 2026"
+  },
+  "footer": {
+    "brand": "Grand Theft Auto VI — Fan Experience",
+    "disclaimerTitle": "Disclaimer",
+    "disclaimer": "This is an unofficial fan-made project and is not affiliated with, endorsed by, or sponsored by Rockstar Games or Take-Two Interactive. All Grand Theft Auto VI trademarks, artwork and footage belong to their respective owners.",
+    "credits": "Credits",
+    "modelCredit": "3D piece adapted from \"Grand Theft Auto 6\" by Fabio Roloff on Sketchfab, licensed CC BY 4.0.",
+    "sourceCredit": "Facts sourced from Rockstar Games Newswire and official Rockstar Games channels.",
+    "builtWith": "Built with Next.js, GSAP, and React Three Fiber.",
+    "backToTop": "Back to top"
+  },
+  "cursor": {
+    "view": "View",
+    "play": "Play",
+    "drag": "Drag",
+    "explore": "Explore"
+  }
+}

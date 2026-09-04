@@ -1,26 +1,135 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* ---- Foundation: black dominates ---- */
+  --color-void: #030303;
+  --color-ink: #0a0a0b;
+  --color-charcoal: #131315;
+  --color-line: rgba(255, 255, 255, 0.09);
+  --color-line-strong: rgba(255, 255, 255, 0.18);
+  --color-paper: #f4f1ec;
+  --color-mist: rgba(244, 241, 236, 0.6);
+  --color-mist-dim: rgba(244, 241, 236, 0.36);
+
+  /* ---- Vice City light-in-darkness accents ---- */
+  --color-sunset-pink: #ff3d81;
+  --color-hot-magenta: #f0198a;
+  --color-violet: #9b4dff;
+  --color-orange: #ff7a30;
+  --color-warm-yellow: #ffc85e;
+  --color-cyan: #3fe3e0;
+
+  --gradient-vice: linear-gradient(
+    115deg,
+    var(--color-sunset-pink) 0%,
+    var(--color-hot-magenta) 28%,
+    var(--color-violet) 62%,
+    var(--color-orange) 100%
+  );
+
+  --ease-cinema: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-weight: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --font-display: var(--font-bebas), sans-serif;
+  --font-body: var(--font-inter), sans-serif;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-void: var(--color-void);
+  --color-ink: var(--color-ink);
+  --color-charcoal: var(--color-charcoal);
+  --color-line: var(--color-line);
+  --color-line-strong: var(--color-line-strong);
+  --color-paper: var(--color-paper);
+  --color-mist: var(--color-mist);
+  --color-mist-dim: var(--color-mist-dim);
+  --color-sunset-pink: var(--color-sunset-pink);
+  --color-hot-magenta: var(--color-hot-magenta);
+  --color-violet: var(--color-violet);
+  --color-orange: var(--color-orange);
+  --color-warm-yellow: var(--color-warm-yellow);
+  --color-cyan: var(--color-cyan);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--color-void);
+  color-scheme: dark;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-void);
+  color: var(--color-paper);
+  font-family: var(--font-body);
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-sunset-pink);
+  color: var(--color-void);
+}
+
+/* Editorial display type: giant, condensed, weighted */
+.font-display {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 0.86;
+}
+
+.text-outline {
+  -webkit-text-stroke: 1px var(--color-line-strong);
+  color: transparent;
+}
+
+.text-gradient-vice {
+  background: var(--gradient-vice);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 160px 160px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom cursor: desktop only. Hidden for the whole time the custom cursor
+   is mounted, not just while hovering something — otherwise the native
+   arrow and the custom dot are both on screen at once during plain
+   movement, which is what read as a stray debug overlay. */
+.custom-cursor-on,
+.custom-cursor-on * {
+  cursor: none !important;
 }
