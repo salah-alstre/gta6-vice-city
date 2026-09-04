@@ -54,9 +54,36 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
   // document catches all of them uniformly, for the life of the page.
   useEffect(() => {
     let rafId = 0;
+    let retryId = 0;
+
+    // ScrollTrigger.refresh() re-measures every trigger by momentarily
+    // reverting all pins, then restores whatever scroll position it
+    // captured the instant it ran. That's safe before the visitor has
+    // reached a pinned chapter, but firing it while a pin is actively
+    // engaged turns an unrelated resize elsewhere on the page into a forced
+    // scroll correction that fights the visitor's own input — dragging the
+    // scrollbar away gets undone on the very next tick. World.tsx is the
+    // section most exposed to this: it's the only pin gated behind an extra
+    // `isDesktop` media-query check, so its pin-spacer can land after every
+    // other chapter has already settled, right as nearby lazy-loaded
+    // content starts a fresh wave of body resizes. Wait for the pin to
+    // release instead of dropping the refresh, so late layout shifts still
+    // get corrected, just never while they'd be visible as a snap-back.
+    const isAnyPinActive = () =>
+      ScrollTrigger.getAll().some((st) => st.pin && st.isActive);
+
+    const doRefresh = () => {
+      if (isAnyPinActive()) {
+        retryId = window.setTimeout(doRefresh, 200);
+        return;
+      }
+      ScrollTrigger.refresh();
+    };
+
     const refresh = () => {
       cancelAnimationFrame(rafId);
-      rafId = requestAnimationFrame(() => ScrollTrigger.refresh());
+      window.clearTimeout(retryId);
+      rafId = requestAnimationFrame(doRefresh);
     };
 
     const ro = new ResizeObserver(refresh);
@@ -67,6 +94,7 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
 
     return () => {
       cancelAnimationFrame(rafId);
+      window.clearTimeout(retryId);
       ro.disconnect();
       window.removeEventListener("load", refresh);
     };
